@@ -1,7 +1,5 @@
 import React from "react";
 import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import styled from "styled-components";
 import Header from "./components/Header";
 import Menu from "./components/Menu";
@@ -19,8 +17,9 @@ const HeaderWrapper = styled.header`
 
 const MenuWrapper = styled.div`
   width: 100%;
-  height: 89px;
+  /* height: 89px; */
   padding-top: 20px;
+  padding-bottom: 20px;
   background-color: #fff;
 `;
 const MainWrapper = styled.main`
@@ -45,7 +44,7 @@ function App() {
       </MenuWrapper>
       <MainWrapper>
         <Container>
-          <Main></Main>
+          <Main />
         </Container>
       </MainWrapper>
     </div>
